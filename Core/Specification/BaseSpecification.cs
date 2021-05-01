@@ -24,5 +24,13 @@ namespace Core.Specification
             Includes.Add(includeExpression);
         }
 
+        public List<string> IncludeString => new List<string>();
+        protected void AddInclude(string includeString)
+        {
+            IncludeString.Add(includeString);
+
+        }
+
+
     }
 }
