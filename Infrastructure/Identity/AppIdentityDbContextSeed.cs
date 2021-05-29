@@ -23,7 +23,7 @@ namespace Infrastructure.Identity
                         Street = "Eleven Street",
                         Barangay = "San Anddress",
                         City = "Cainta",
-                        Province = "Riza"
+                        Province = "Rizal"
                     }
                 };
 
