@@ -24,6 +24,7 @@ namespace API.Controllers
             _orderService = orderService;
         }
 
+        [HttpPost]
         public async Task<ActionResult<Order>> CreateOrder(OrderDto orderDto)
         {
             var email = HttpContext.User.RetrieveEmailFromPrincipal();
@@ -59,7 +60,7 @@ namespace API.Controllers
             return _mapper.Map<Order, OrderToReturnDto>(order);
         }
 
-        [HttpGet("deliveryMethod")]
+        [HttpGet("deliveryMethods")]
         public async Task<ActionResult<IReadOnlyList<DeliveryMethod>>> GetDeliveryMethods()
         {
             return Ok(await _orderService.GetDeliveryMethodAsync());

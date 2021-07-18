@@ -14,7 +14,8 @@ export class BusyService {
     this.spinnerService.show(undefined, {
       type: 'ball-spin-clockwise',
       bdColor: 'rgb(255,255,255,0.7)',
-      color: '#333333'
+      color: '#333333',
+      size: "medium"
     });
   }
 
